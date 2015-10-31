@@ -10,7 +10,7 @@ var server = new mongodb.Server("127.0.0.1", 27017, {});
 // 27017 is the default port for connecting to MongoDB
 var client = new mongodb.Db('test', server);
 
-// Open the client's connection to the server:
+// Open the subClient's connection to the server:
 client.open(function(err, p_client) {
   console.log("Connected to MongoDB!");
 
