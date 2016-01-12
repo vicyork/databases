@@ -6,19 +6,19 @@ CREATE TABLE messages (
   /* Describe your table here.*/
   id int auto_increment primary key,
   message varchar(150),
-  user_id int,
-  room_id int,
+  username varchar(150),
+  roomname varchar(150),
   time_stamp varchar(30)
 );
 
 CREATE TABLE users (
   id int auto_increment primary key,
-  name varchar(30)
+  username varchar(30)
 );
 
 CREATE TABLE rooms (
   id int auto_increment primary key,
-  name varchar(30)
+  roomname varchar(30)
 );
 
 /* relationships

@@ -40,3 +40,4 @@ User.sync().success(function() {
     });
   });
 });
+

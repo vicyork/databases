@@ -11,17 +11,14 @@ module.exports.connection = mysql.createConnection({
   database: 'chat'
 });
 
-module.exports.connection.connect();
+// module.exports.connection.connect();
 
-module.exports.connection.query('SELECT * FROM messages', function(err, data, fields){
+// module.exports.connection.query('SELECT * FROM messages', function(err, data, fields){
+//   if(!err){
+//     console.log(data);
+//   } else {
+//     console.log("An error happened!")
+//   }
+// });
 
-  if(!err){
-    console.log(data);
-
-  } else {
-    console.log("An error happened!")
-  }
-
-});
-
-module.exports.connection.end();
+// module.exports.connection.end();
